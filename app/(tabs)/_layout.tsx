@@ -11,7 +11,7 @@ export default function TabsLayout() {
 
           if (route.name === "home") icon = "home";
           if (route.name === "about") icon = "person";
-          if (route.name === "settings") icon = "settings";
+          if (route.name === "todoList") icon = "list";
 
           return <Ionicons name={icon as any} size={size} color={color} />;
         },
@@ -19,6 +19,7 @@ export default function TabsLayout() {
     >
       <Tabs.Screen name="home" options={{ title: "Home" }} />
       <Tabs.Screen name="about" options={{ title: "About" }} />
+      <Tabs.Screen name="todoList" options={{ title: "Todo List" }} />
     </Tabs>
   );
 }
