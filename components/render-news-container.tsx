@@ -29,7 +29,7 @@ const RenderNewsContainer = ({ category }: { category: string }) => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={{ fontSize: 20, fontWeight: "bold" }}>
+      <Text style={{ fontSize: 20, fontWeight: "bold", marginBottom: 10 }}>
         {category.toUpperCase()} NEWS
       </Text>
       <FlatList
